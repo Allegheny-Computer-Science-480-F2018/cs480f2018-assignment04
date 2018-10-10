@@ -1,0 +1,146 @@
+\documentclass[11pt]{article}
+\newcommand{\command}[1]{``\lstinline{#1}''}
+\newcommand{\program}[1]{\lstinline{#1}}
+%\newcommand{\url}[1]{\lstinline{#1}}
+\newcommand{\channel}[1]{\lstinline{#1}}
+\newcommand{\option}[1]{``{#1}''}
+\newcommand{\step}[1]{``{#1}''}
+
+\newcommand{\assignmentduedate}{11 October}
+\newcommand{\assignmentassignedate}{ 4 October}
+\newcommand{\assignmentnumber}{Three}
+
+\newcommand{\labyear}{2018}
+\newcommand{\labtime}{2:30 pm}
+
+\newcommand{\assigneddate}{Assigned:  \assignmentassignedate, \labyear{} at \labtime{}}
+\newcommand{\duedate}{Due:  \assignmentduedate, \labyear{} at \labtime{}}
+
+\usepackage{pifont}
+\newcommand{\checkmark}{\ding{51}}
+\newcommand{\naughtmark}{\ding{55}}
+
+% Enable margin notes to catch student attention
+
+\usepackage{marginnote}
+\reversemarginpar
+\renewcommand*{\raggedrightmarginnote}{\centering}
+
+\newcommand{\caution}[1]{\null\hfill\LARGE{\faWarning{}}\newline\scriptsize{\em{#1}}}
+\newcommand{\discuss}[1]{\null\hfill\LARGE{\faCommentO{}}\newline\scriptsize{\em{#1}}}
+\newcommand{\resource}[1]{\null\hfill\LARGE{\faLink{}}\newline\scriptsize{\em{#1}}}
+\newcommand{\think}[1]{\null\hfill\LARGE{\faCogs{}}\newline\scriptsize{\em{#1}}}
+
+
+\usepackage{listings}
+\lstset{
+  basicstyle=\small\ttfamily,
+  columns=flexible,
+  breaklines=true
+}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=magenta,
+}
+
+\usepackage{fancyhdr}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+
+\usepackage{marginnote}
+\reversemarginpar
+\renewcommand*{\raggedrightmarginnote}{\centering}
+
+\fancyhf{}
+\rhead{Computer Science 480}
+\lhead{ Assignment \assignmentnumber{} }
+\rfoot{Page \thepage}
+\lfoot{\duedate}
+
+\usepackage{titlesec}
+\titlespacing\section{0pt}{6pt plus 4pt minus 2pt}{4pt plus 2pt minus 2pt}
+
+\newcommand{\labtitle}[1]
+{
+  \begin{center}
+    \begin{center}
+      \bf
+      CMPSC 480 \\ Software Innovation I\\
+      Fall 2018\\
+      \medskip
+    \end{center}
+    \bf
+    #1
+  \end{center}
+}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\labtitle{Assignment \assignmentnumber{} }
+\begin{center} \textbf{ \assigneddate{} \\ \duedate{} } \end{center} 
+\noindent \textbf{ }
+
+%\vspace{-0.05in}
+\section*{Objectives}
+
+To set up a Stack Exchange account and to participate in a Stack Overflow Q\& A community. To learn about proper code reuse and attribution. To participate in an information search competition using the Stack Overflow platform. To contribute to the discussion on the advantages and disadvantages of the online communities such as Stack Overflow.
+
+%\vspace{-0.05in}
+\section*{Reading Assignment}
+%\vspace{-0.05in}
+
+To do well on this assignment, you
+should first review the flow and the policies of Stack Overflow on \href{https://stackoverflow.com/help}{Stack Overflow Help page}.
+Then, you need to learn how to properly give attribution to the information found on sites such as StackOverflow by reading an article titled \href{
+https://ieeexplore.ieee.org/document/7965289/}{Attribution Required: Stack Overflow Code Snippets in GitHub Projects} and \href{
+https://stackoverflow.blog/2009/06/25/attribution-required}{Attribution Required} blog. Finally, you should read about current culture of Stack Overflow \href{http://www.pgbovine.net/publications/stackoverflow-female-participation_FSE-2016.pdf}{Paradise Unplugged: Identifying Barriers for Female
+Participation on Stack Overflow}.
+
+%\vspace{-0.05in}
+\section*{Stack Overflow}
+%\vspace{-0.05in}
+
+This assignment invites you to continue building your online presence by joining and participating in an online community. In particular, you must complete the  steps outlined below.
+\vspace{-0.05in}
+\begin{enumerate}
+	\item Take the Stack Overflow tour at \url{https://stackoverflow.com/tour}. Learn about badges, asking questions, answering questions, code of conduct, reputation, etc. 
+	\item Sign up for a Stack Overflow account. Then add your professional photo and a  short bio to complete your profile.
+	\item Learn how to perform searches on Stack Overflow by reading \url{https://stackoverflow.com/help/searching}. Then, practice by finding answers to at least one query. Dung the next class session you will work in teams to find answers to the given queries (see section below titled ``Team Work'').
+	\item An informative answer to one question on Stack Overflow. Your answer should be correctly formatted and should follow Stack Overflow guidelines for answering questions. In the Slack's \# assignments channel post a link to your answer on Stack Overflow.
+\end{enumerate} 
+\vspace{-0.05in}
+
+%\vspace{-0.05in}
+\section*{Attribution}
+%\vspace{-0.05in}
+Read the assigned readings on attribution, outlined in the ``Reading Assignment'' section, to learn how to properly give credit in your GitHub projects for the answers found on Stack Overflow.  Then, follow instructions on \href{https://help.github.com/articles/licensing-a-repository/}{Licensing a repository} article to create an appropriate {\tt LICENSE.md} file. If you have adopted an existing repository that contains a license file, add your license information to it. If your adopted existing repository did not have license information, add the original contributors' information to your new license file.
+
+\section*{Team Work}
+Create a team of 3-4 members. During our next class session each team will be invited to participate in the following activities.
+\begin{itemize}
+	\item Stack Overflow querying competition where the instructor will ask some questions and your team should use Stack Overflow to find the answers.
+	\item Discussion regarding Stack Overflow: how it works, what the community is like, etc. Prepare two points to describe benefits and two points to describe disadvantages of Stack Overflow. 
+\end{itemize}
+
+%\vspace{-0.05in}
+\section*{Deliverables and Evaluation}
+%\vspace{-0.05in}
+
+You are invited to submit the following materials:
+\begin{enumerate}
+	\item A link to the informative answer you posted on Stack Overflow send via the course's \#assignments Slack channel. 
+	\item Properly committed {\tt LICENSE.md} file in your website repository.
+\end{enumerate}
+
+Your grade for this assignment will be based on your submission of the items outlined above and your participation in the team work portion of the assignment during the next class session. Students who have an unexcused absence or fail to contribute to the team work and discussion will receive a grade reduction.
+
+\end{document}
